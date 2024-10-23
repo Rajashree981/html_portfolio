@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Rajashree's Portfolio</title>
+  <link rel="stylesheet" href="file.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h1>Rajashree Das</h1>
+    </div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#about">About </a>
+      <a href="#projects">Projects </a>
+      <a href="#resume">Resume</a>
+      <a href="#contacts">Contact </a>
+    </div>
+  </nav>
+  <section>
+    <div class="row">
+      <img src="bg1.jpg" class="front-img" style="height: 700px;">
+      <div class="col">
+        <h5><span style="color:#8f9697;font-size: 40px;font-family: 'Playwrite CU', cursive;">Hello !</span></h5><br>
+        <h1 style="color:#8f9697;font-size: 40px;">I'm <span style="color:rgb(60, 183, 196);font-size: 70px;">Rajashree
+            Das</span></h1>
+        <br><br>
+        <h2 style="color:#8f9697;font-size: 50px;">I am a <span class="typing"
+            style="color:rgb(60, 183, 196);font-size: 50px;"></span></h2>
+      </div>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed(".typing",
+          {
+            strings: ["Coder", "Developer", "Analyst"],
+            typeSpeed: 250,
+            backSpeed: 250, margin: 0,
+            loop: true
+          })
+      </script>
+  </section>
+
+  <br><br><br><br>
+
+  <section id="about">
+    <br><br><br><br><br>
+    <div class="page2">
+      <div class="card">
+        <img class="card-img" src="newmg.jpg" alt="profile img">
+        <div class="card-body">
+          <h2 class="card-title">Profile </h2>
+          <hr class="h">
+          <ul class="card-info">
+            <li>Name: <span> Rajashree Das</span></li>
+            <li>Roll No.: <span> 21EAIAD027</span></li>
+            <li>Branch: <span>Artificial Intelligence & Data Science</span></li>
+            <li>Education: <span>Bachelor of Engineering</span></li>
+            <li>Institute: <span> Arya College of Engineering</span></li>
+            <li>Language: <span>English,Hindi,Bangla,Assamese</span></li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="right-side-page2">
+        <h1 class="about-me">About Me</h1>
+        <p>With a begining level experience in the field of data science & analytics, accompanied by a bachelor's degree
+          in engineering. Proficient in data analysis, statistical analysis, hypothesis testing, customer behaviour
+          analysis, & machine learning. Demonstrated success in leading impactful projects and providing effective
+          mentorship.</p>
+      </div>
+    </div>
+  </section>
+  <br><br><br><br>
+  <section id="projects">
+    <br><br><br><br>
+    <h1 class="projects">PROJECTS</h1>
+    <div class="page3">
+      <div class="box box1">
+        <img class=" img1" src="iris.jpeg" alt="iris flower">
+        <a class="  link1"
+          href="https://github.com/Rajashree981/Oasis-Infobyte/blob/821b617104b87be6b199c335ff36797d47828cc9/irisflower.ipynb">Iris
+          Flower Classification</a>
+        <p class="description">Classify the type of Iris flower given, among the three varieteies of iris-setosa,
+          versicolour, virginica
+        </p>
+      </div>
+      <div class="box box2">
+        <img class=" img2" src="unemploy.jpeg" alt="iris flower">
+        <a class=" link2"
+          href="https://github.com/Rajashree981/Oasis-Infobyte/blob/821b617104b87be6b199c335ff36797d47828cc9/unemp_india.ipynb">
+          Indian Unemployment Analysis</a>
+        <p class="description">Analysing the Unemployment rate in India state wise during COVID-19 panademic.</p>
+      </div>
+      <div class="box box3">
+        <img class=" img3" src="spam.jpeg" alt="iris flower">
+        <a class=" link3"
+          href="https://github.com/Rajashree981/Oasis-Infobyte/blob/821b617104b87be6b199c335ff36797d47828cc9/email_spam.ipynb">Email
+          Spam Classification</a>
+        <p class="description">Classify weather the email received is a spam email or not, helping users to be alert.
+        </p>
+      </div>
+    </div>
+  </section>
+  <br><br><br><br>
+  <section id="resume">
+    <br><br><br><br>
+    <h1 class="skill">SKILLS</h1>
+    <div class="parts">
+    <div class="set">
+      <div class="container c1">
+        <div class="circular-progress">    <span class="progress-value">0%</span>
+        </div>
+        <span class="text">HTML</span></div>
+        <div class="container c2">
+          <div class="circular-progress">    <span class="progress-value">0%</span>
+          </div>
+          <span class="text">CSS</span></div>
+          <div class="container c3">
+            <div class="circular-progress">    <span class="progress-value">0%</span>
+            </div>
+            <span class="text">JS</span></div>
+            
+      </div>
+      <script>
+        let progressData = [
+          { selector: ".c1", endValue: 90 }, // HTML progress
+          { selector: ".c2", endValue: 75 }, // CSS progress
+          { selector: ".c3", endValue: 85 }, // JS progress
+        ];
+      
+        progressData.forEach(data => {
+          let circularProgress = document.querySelector(`${data.selector} .circular-progress`),
+              progressValue = document.querySelector(`${data.selector} .progress-value`);
+          
+          let progressStartValue = 0,
+              progressEndValue = data.endValue,
+              speed = 100;
+        
+          let progress = setInterval(() => {
+            progressStartValue++;
+            progressValue.textContent = `${progressStartValue}%`;
+            circularProgress.style.background = `conic-gradient( rgb(60, 183, 196) ${progressStartValue * 3.6}deg, rgb(4, 73, 79) 0deg)`;
+          
+            if (progressStartValue === progressEndValue) {
+              clearInterval(progress);
+            }
+          }, speed);
+        });
+      </script>
+      <a class="cv-btn" href="r1.pdf">Download CV</a>
+      <div class="linears">
+        <h2 class="data-sci">Data Science</h2>
+        <li class="c1">
+          <h3>SQL</h3><span class="bar"><span class="sql"></span></span>
+        </li>
+        <li class="c1">
+          <h3>Python</h3><span class="bar"><span class="py"></span></span>
+        </li>
+        <li class="c1">
+          <h3>Data Visualization</h3><span class="bar"><span class="data-viz"></span></span>
+        </li>
+        <li class="c1">
+          <h3>Statistics</h3><span class="bar"><span class="stats"></span></span>
+        </li>
+        <li class="c1">
+          <h3>Machine Learnind</h3><span class="bar"><span class="ml"></span></span>
+        </li>
+      </div>
+    </div>
+  </section>
+  <section class="certificates">
+    <h1 id="crtfs">CERTIFICATES</h1>
+    <div class="slider-wrapper">
+      <div class="slider">
+        <img id="slide-0" src="icehut.png">
+        <img id="slide-1" src="3.png">
+        <img id="slide-2" src="Rajashree Das  Appreciation Certificate-1.png">
+        <img id="slide-3" src="certificate_37015_1686-1.png">
+        <img id="slide-4" src="WhatsApp Image 2024-09-14 at 10.00.07_b6ed514d.jpg">
+        
+      </div>
+      <div class="slide-nav">
+        <a href="#slide-0"></a>
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+        <a href="#slide-4"></a>
+      </div>
+    </div>
+  </section>
+  <br><br><br><br>
+  <section id="contacts">
+    <br><br><br><br>
+    <h1 class="c">Contact</h1>
+    <h3 class="d">Below are the details to reach out to me !</h3>
+    <br><br><br><br>
+    <div class="icons">
+      <div class="ic ad"><i class='bx bx-home'></i><p>ADDRESS<br><a
+          href="https://maps.app.goo.gl/zxT9Aig5NDWeLjcs5">Assam,India</a></p></div>
+
+      <div class="ic ct"><i class='bx bx-phone-call'></i></i><p>CONTACT NUMBER<br><a> +91-8740940103</a></p>
+      </div>
+      <div class="ic em"><i class='bx bxl-gmail'></i></i><p>EMAIL ADDRESS<br><a
+          href="https://www.bing.com/ck/a?!&&p=2a88e4ddf1ce6200JmltdHM9MTcyNjE4NTYwMCZpZ3VpZD0yZDE2MTEwYi0wNDQ2LTYwMTctMTRhNy0wMGRmMDU0MDYxZTAmaW5zaWQ9NTIxMQ&ptn=3&ver=2&hsh=3&fclid=2d16110b-0446-6017-14a7-00df054061e0&psq=gmail&u=a1aHR0cHM6Ly9tYWlsLmdvb2dsZS5jb20vbWFpbC8&ntb=1">dasrajashree981@gmail.com</a></p></div>
+      <div class="ic res"><i class='bx bx-paperclip'></i></i><p>DOWNLOAD RESUME<br><a href="r1.pdf">resumelink</a></p>
+      </div>
+
+    </div>
+
+    <h2 class="q-line">Have any questions?<span><a class="btn" href="https://forms.gle/AGHwSEQxtVPsrg6B9">Contact
+          Form</a></span></h2>
+
+    <!--contact form link---https://docs.google.com/forms/d/1ooD1RdP9VF9Puyfob53GFNx0pw9mfUlxqVpc89QVgQo/edit#responses-->
+      <div class="boxs">
+      <h4>Find me on</h4>
+      
+      <a href="https://github.com/Rajashree981"><i class='bx bxl-github'></i></a>
+      <a href="https://www.facebook.com/RmNnLmNsLnR"><i class='bx bxl-facebook'></i></a>
+      <a href="https://www.instagram.com/tuxy_3567/"><i class='bx bxl-instagram'></i></a>
+      <a href="https://www.linkedin.com/in/rajashree-das-28b993229/"><i class='bx bxl-linkedin'></i></a>
+      
+      </div>
+      <div class="below">Copyright ©2024 All rights reserved </div>
+  </section>
+</body>
+
+</html>
